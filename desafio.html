@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens de Valorant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #ff4655, #eaeaea, #ff0000);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        header {
+            background: linear-gradient(to right, #20232a, #ff4655);
+            color: #eaeaea;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .character-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .character-card {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            transition: transform 0.4s, box-shadow 0.4s;
+            overflow: hidden;
+        }
+
+        .character-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+        }
+
+        .character-image {
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+            transition: transform 0.4s;
+        }
+
+        .character-card:hover .character-image {
+            transform: scale(1.1);
+        }
+
+        .character-name {
+            font-size: 1.8em;
+            color: #ff4655;
+            margin: 15px 0;
+            font-weight: 700;
+        }
+
+        .character-description {
+            font-size: 1em;
+            color: #ccc;
+            margin: 0;
+        }
+
+        .character-details {
+            font-size: 0.9em;
+            color: #bbb;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .character-number {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff4655;
+            color: #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #20232a;
+            color: #ff4655;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personagens do Valorant</h1>
+    </header>
+
+    <section class="character-grid">
+        <div class="character-card">
+            <figure><img src="jet.png" alt="Jett" class="character-image"></figure>
+            <h2 class="character-name">Jett</h2>
+            <p class="character-description">Jett é uma Duelista ágil e imprevisível, especialista em mobilidade.</p>
+            <div class="character-details">
+                <p><strong>Função:</strong> Duelista</p>
+                <p><strong>Habilidades:</strong> Dash, Updraft, Tailwind, Cloudburst</p>
+            </div>
+            <div class="character-number">1</div>
+        </div>
+
+        <div class="character-card">
+            <figure><img src="sova.png" alt="Sova" class="character-image"></figure>
+            <h2 class="character-name">Sova</h2>
+            <p class="character-description">Sova é um Sentinela que usa tecnologia avançada para localizar e eliminar inimigos.</p>
+            <div class="character-details">
+                <p><strong>Função:</strong> Sentinela</p>
+                <p><strong>Habilidades:</strong> Owl Drone, Shock Bolt, Recon Bolt, Hunter's Fury</p>
+            </div>
+            <div class="character-number">2</div>
+        </div>
+
+        <div class="character-card">
+            <figure><img src="omen.png" alt="Omen" class="character-image"></figure>
+            <h2 class="character-name">Omen</h2>
+            <p class="character-description">Omen é um controlador sombrio com habilidades de teletransporte e neblina.</p>
+            <div class="character-details">
+                <p><strong>Função:</strong> Controlador</p>
+                <p><strong>Habilidades:</strong> Shrouded Step, Dark Cover, Paranoia, Ultimate: From the Shadows</p>
+            </div>
+            <div class="character-number">3</div>
+        </div>
+
+        <div class="character-card">
+            <figure><img src="phoenix.png" alt="Phoenix" class="character-image"></figure>
+            <h2 class="character-name">Phoenix</h2>
+            <p class="character-description">Phoenix é um Duelista com habilidades baseadas em fogo que permitem recuperar saúde e causar dano em área.</p>
+            <div class="character-details">
+                <p><strong>Função:</strong> Duelista</p>
+                <p><strong>Habilidades:</strong> Blaze, Curveball, Hot Hands, Run It Back</p>
+            </div>
+            <div class="character-number">4</div>
+        </div>
+
+        <div class="character-card">
+            <figure><img src="breach.png" alt="Breach" class="character-image"></figure>
+            <h2 class="character-name">Breach</h2>
+            <p class="character-description">Breach é um controlador com habilidades de explosão e cegueira para desorientar inimigos.</p>
+            <div class="character-details">
+                <p><strong>Função:</strong> Controlador</p>
+                <p><strong>Habilidades:</strong> Flashpoint, Aftershock, Fault Line, Ultimate: Rolling Thunder</p>
+            </div>
+            <div class="character-number">5</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Valorant Characters Page. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
